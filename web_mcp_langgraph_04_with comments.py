@@ -1,8 +1,3 @@
-"""
-Beginner-friendly LangGraph agent that uses Bright Data Web MCP
-to research a topic and return a concise bullet summary with sources.
-"""
-
 import asyncio
 import os
 from typing import Literal
@@ -121,6 +116,7 @@ def make_tool_node(tools_by_name: dict):
 # ------------------------------------------------------------
 
 async def main():
+    # Load env variables
     load_dotenv()
 
     # Load Bright Data token
